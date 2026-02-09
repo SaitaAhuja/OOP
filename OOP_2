@@ -1,0 +1,121 @@
+#include <iostream>
+using namespace std;
+class Bank{
+	private:
+	int account_no = 12345;
+	int trans = 0;
+	float balance=0;
+	public:
+		
+	void current_balance(float bal_amount){
+			if(bal_amount > 0){
+				balance = bal_amount;
+			}
+			else{
+				cout<<"Invalid Amount!";
+			}
+		}
+	bool deposit(float dep_amount){
+		if(dep_amount>0){
+			balance += dep_amount; 
+			trans++;
+			return true;
+		}
+		else{
+			cout<<"Invalid Amount!";
+			return false;
+		}
+		
+	}
+	bool withdraw(float with_amount){
+		if(with_amount>0 && with_amount <= balance){
+			balance -= with_amount;
+			trans++;
+			return true;
+		}
+		else{
+			cout<<"Insufficient Balance!"<<endl;
+			return false;
+		}
+	}
+	
+       float get_balance() {
+    return balance;
+ }
+       int get_trans() {
+    return trans;
+ }
+        float get_acc_no() {
+    return account_no;
+ }
+	    float calculateInterest() {
+    float rate = 5.0;
+    float interestEarned = (balance * rate) / 100; 
+    return interestEarned;
+ }
+};
+int main(){
+	int choice=0 ,acc;
+	float ini_balance;
+	Bank b1;
+	float amount;
+	
+	cout<<"Enter Account Number: ";
+	cin>>acc;
+	
+	while(acc!=b1.get_acc_no()){
+		cout<<"Invalid Account Number!"<<endl;
+		cout<<"Enter Account Number: ";
+	    cin>>acc;
+ } 
+	cout<<"Enter Initial Balance: "<<endl;
+	cin>>ini_balance;
+	b1.current_balance(ini_balance);
+    
+    cout<<"WELCOME TO THE ABC BANK!"<<endl;
+    
+	while(choice!=6){
+	cout<<"MENU"<<endl;
+    cout<<"1. Display the account balance"<<endl;
+    cout<<"2. Display the number of transactions"<<endl;
+    cout<<"3. Display interest earned for this period"<<endl;
+    cout<<"4. Make a deposit"<<endl;
+    cout<<"5. Make a withdrawal"<<endl;
+    cout<<"6. Exit the program"<<endl;
+    cout<<"What do you want to do?"<<endl;
+    cin>>choice;
+    
+    if(choice==1){
+    	cout<<"Your current Balance: Rs."<<b1.get_balance()<<endl;
+	}
+	else if(choice==2){
+		cout<<"Total Number of Transactions made: "<<b1.get_trans()<<endl;
+	}
+	else if(choice==3){
+		cout<<"Interest Earned: "<<b1.calculateInterest()<<endl;
+	}
+	else if(choice==4){ 
+		cout<<"Enter Amount to Deposit: "<<endl;
+		cin>>amount;
+		if(b1.deposit(amount)){
+		cout<<"The amount deposited: "<<amount<<endl;
+		cout<<"Current Balance: "<<b1.get_balance()<<endl;
+	}
+} else if(choice==5){
+		cout<<"Enter Amount to Withdraw: "<<endl;
+		cin>>amount;
+		if(b1.withdraw(amount)){
+		cout<<"The amount withdrawn: "<<amount<<endl;
+		cout<<"Current Balance: "<<b1.get_balance()<<endl;
+	}
+}
+	else if(choice==6){
+		cout<<"Thank You For Using ABC Bank!"<<endl;
+		return 0;
+	}
+	else{
+		cout<<"Invalid Option!"<<endl;
+	}	
+} 
+	return 0;
+} 
