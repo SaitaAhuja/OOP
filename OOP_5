@@ -1,0 +1,175 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Teacher {
+private:
+    string Name;
+    int Age;
+    string Institute;
+public:
+    Teacher(string n,int a,string i){
+        Name = n;
+        Age = a;
+        Institute = i;
+    }
+    string getName(){ return Name; }
+    int getAge(){ return Age; }
+    string getInstitute(){ return Institute; }
+};
+class HumanitiesTeacher : public Teacher {
+private:
+    string Department;
+    string CourseName;
+    string Designation;
+public:
+    HumanitiesTeacher(string n,int a,string i,string c,string d): Teacher(n,a,i){
+        Department = "Humanities";
+        CourseName = c;
+        Designation = d;
+    }
+    void display(){
+        cout<<"\nHumanities Teacher\n";
+        cout<<"Name: "<<getName()<<endl;
+        cout<<"Age: "<<getAge()<<endl;
+        cout<<"Institute: "<<getInstitute()<<endl;
+        cout<<"Department: "<<Department<<endl;
+        cout<<"Course Name: "<<CourseName<<endl;
+        cout<<"Designation: "<<Designation<<endl;
+    }
+};
+class ScienceTeacher : public Teacher {
+private:
+    string Department;
+    string CourseName;
+    string Designation;
+
+public:
+    ScienceTeacher(string n,int a,string i,string c,string d): Teacher(n,a,i){
+        Department = "Science";
+        CourseName = c;
+        Designation = d;
+    }
+    void display(){
+        cout<<"\nScience Teacher\n";
+        cout<<"Name: "<<getName()<<endl;
+        cout<<"Age: "<<getAge()<<endl;
+        cout<<"Institute: "<<getInstitute()<<endl;
+        cout<<"Department: "<<Department<<endl;
+        cout<<"Course Name: "<<CourseName<<endl;
+        cout<<"Designation: "<<Designation<<endl;
+    }
+};
+class MathsTeacher : public Teacher {
+private:
+    string Department;
+    string CourseName;
+    string Designation;
+public:
+    MathsTeacher(string n,int a,string i,string c,string d): Teacher(n,a,i){
+        Department = "Maths";
+        CourseName = c;
+        Designation = d;
+    }
+    void display(){
+        cout<<"\nMaths Teacher\n";
+        cout<<"Name: "<<getName()<<endl;
+        cout<<"Age: "<<getAge()<<endl;
+        cout<<"Institute: "<<getInstitute()<<endl;
+        cout<<"Department: "<<Department<<endl;
+        cout<<"Course Name: "<<CourseName<<endl;
+        cout<<"Designation: "<<Designation<<endl;
+    }
+};
+int main(){
+    string name, course, designation, institute;
+    int age;
+
+    cout<<"Enter Humanities Teacher Name: ";
+    cin>>name;
+
+    cout<<"Enter Age: ";
+    cin>>age;
+
+    cout<<"Enter Institute: ";
+    cin>>institute;
+
+    cout<<"Enter Course Name: ";
+    cin>>course;
+
+    cout<<"Enter Designation: ";
+    cin>>designation;
+
+    HumanitiesTeacher hTeacher(name,age,institute,course,designation);
+
+    cout<<"\nEnter Science Teacher Name: ";
+    cin>>name;
+
+    cout<<"Enter Age: ";
+    cin>>age;
+
+    cout<<"Enter Institute: ";
+    cin>>institute;
+
+    cout<<"Enter Course Name: ";
+    cin>>course;
+
+
+    cout<<"Enter Designation: ";
+    cin>>designation;
+
+    ScienceTeacher sTeacher(name,age,institute,course,designation);
+
+    cout<<"\nEnter Maths Teacher Name: ";
+    cin>>name;
+
+    cout<<"Enter Age: ";
+    cin>>age;
+  
+
+    cout<<"Enter Institute: ";
+    cin>>institute;
+
+    cout<<"Enter Course Name: ";
+    cin>>course;
+
+    cout<<"Enter Designation: ";
+    cin>>designation;
+
+    MathsTeacher mTeacher(name,age,institute,course,designation);
+
+    hTeacher.display();
+    sTeacher.display();
+    mTeacher.display();
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
