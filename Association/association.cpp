@@ -38,7 +38,7 @@ class teacher{
 			}
 		}
 };
-int main(){
+int main(){ 
 	student s1(01,"Ali");
 	student s2(02,"Saita");
 	teacher t1("Murk",01);
