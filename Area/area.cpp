@@ -5,7 +5,7 @@ using namespace std;
 class Shape {
 public:
     virtual float area() = 0; // pure virtual function
-};
+}; 
 
 // Derived class Rectangle
 class Rectangle : public Shape {
