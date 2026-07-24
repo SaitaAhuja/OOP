@@ -26,7 +26,7 @@ public:
         } else {
             std::cout << "Invalid deposit amount!" << std::endl;
         }
-    }
+    } 
 
     // Getter: Controlled way to read private data
     double getBalance() {
