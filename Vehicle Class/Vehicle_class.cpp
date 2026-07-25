@@ -6,7 +6,6 @@ class vehicle{
 	double speed;
 	double fuel;
 	int on;
-	
 	public:
 		vehicle(double m){
 			maxspeed = m;
