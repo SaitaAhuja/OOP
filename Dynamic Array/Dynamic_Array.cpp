@@ -7,7 +7,7 @@ class Dynamic_Array{
 		int *ptr;
 		int currentsize;
 		int totalsize;
-		void resize(){
+		void resize(){ 
 			totalsize = (totalsize == 0)? 1 : 2*totalsize;
 				int *temp = new int[totalsize];
 				if(temp == NULL){
