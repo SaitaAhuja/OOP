@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-class BankAccount {
+class BankAccount { 
 private:
     // Hidden data (Attributes)
     std::string owner;
