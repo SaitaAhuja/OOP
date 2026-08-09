@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
-
 // Abstract base class
 class Shape {
 public:
     virtual float area() = 0; // pure virtual function
 }; 
-
 // Derived class Rectangle
 class Rectangle : public Shape {
 private:
