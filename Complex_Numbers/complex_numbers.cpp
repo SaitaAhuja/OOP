@@ -4,7 +4,6 @@ class complex {
 public:
     float real;
     float imag;
-
     complex() {
         real = 0;
         imag = 0;
