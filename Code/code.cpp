@@ -7,21 +7,18 @@ public:
     }
     virtual ~PowerSource() {}
 };
-
 class Scanner {
 public:
     void scan() {
         cout << "Scanning surroundings..." << endl;
     }
 };
-
 // Multiple Inheritance
 class Drone : public PowerSource, public Scanner {
 public:
     void consume() override {
         cout << "Drone battery discharging..." << endl;
     }
-
     void flightCheck() {
         cout << "Rotors spinning at 100%." << endl;
     }
