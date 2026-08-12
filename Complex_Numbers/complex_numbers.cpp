@@ -12,7 +12,7 @@ public:
         cout << "Enter real: ";
         cin >> real;
         cout << "Enter imaginary: ";
-        cin >> imag;
+        cin >> imag; 
     }
     complex operator+(const complex& obj) const {
         complex temp;
