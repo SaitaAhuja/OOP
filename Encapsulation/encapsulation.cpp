@@ -2,7 +2,7 @@
 #include <string>
 class BankAccount { 
 private:
-    // Hidden data (Attributes) 
+    // Hidden data (Attributes)  
     std::string owner;
     double balance;
 public:
