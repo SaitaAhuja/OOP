@@ -6,8 +6,8 @@ public:
     float imag;
     complex() {
         real = 0;
-        imag = 0; 
-    }
+        imag = 0;
+    }. 
     void input() {
         cout << "Enter real: ";
         cin >> real;
