@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 class complex {
-public:
+public: 
     float real;
     float imag;
     complex() {
