@@ -4,7 +4,7 @@
 using namespace std;
 class Dynamic_Array{
 	private:
-		int *ptr;
+		int *ptr; 
 		int currentsize;
 		int totalsize;
 		void resize(){ 
