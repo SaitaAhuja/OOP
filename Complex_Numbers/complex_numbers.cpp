@@ -2,7 +2,7 @@
 using namespace std;
 class complex {
 public: 
-    float real;
+    float real;  
     float imag;
     complex() {
         real = 0;
