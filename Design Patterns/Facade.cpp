@@ -13,12 +13,10 @@ public:
     void turnOn() { cout << "Projector turned on." << endl; }
     void setInput() { cout << "Projector input set to HDMI." << endl; }
 };
-
 class RoomLights {
 public:
     void dim() { cout << "Lights dimmed to 20%." << endl; }
 };
-
 class HomeTheaterFacade {
 private:
     Amplifier amp;
