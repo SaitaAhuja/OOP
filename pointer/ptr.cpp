@@ -22,6 +22,3 @@ cout<<big<<endl;
 delete[] array;
 return 0;
 }
-
-
-
