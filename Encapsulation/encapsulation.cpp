@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
+using namespace std;
 class BankAccount { 
 private:
     // Hidden data (Attributes)  
-    std::string owner;
+    string owner;
     double balance;
 public:
     // Constructor to initialize data
-    BankAccount(std::string name, double initialDeposit) {
+    BankAccount(string name, double initialDeposit) {
         owner = name;
         if (initialDeposit > 0) {
             balance = initialDeposit;
@@ -19,16 +20,16 @@ public:
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            std::cout << "Deposited: $" << amount << std::endl;
+            cout << "Deposited: $" << amount << endl;
         } else {
-            std::cout << "Invalid deposit amount!" << std::endl;
+            cout << "Invalid deposit amount!" << endl;
         }
     } 
     // Getter: Controlled way to read private data
     double getBalance() {
         return balance;
     }
-    std::string getOwner() {
+    string getOwner() {
         return owner;
     }
 };
@@ -37,8 +38,8 @@ int main() {
     // This would cause a COMPILE ERROR because 'balance' is private:
     // myAccount.balance = 1000000; 
     // Proper way to interact with the object:
-    myAccount.deposit(250.50);
-    std::cout << "Owner: " << myAccount.getOwner() << std::endl;
-    std::cout << "Final Balance: $" << myAccount.getBalance() << std::endl;
+    myAccount.deposit(250.50); 
+    std::cout << "Owner: " << myAccount.getOwner() << endl;
+    std::cout << "Final Balance: $" << myAccount.getBalance() << endl;
     return 0;
 }
