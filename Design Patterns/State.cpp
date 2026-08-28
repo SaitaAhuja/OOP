@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 class LightSwitch;
-
 class State {
 public:
     virtual void press(LightSwitch* sw) = 0;
@@ -11,7 +10,6 @@ class OffState : public State {
 public:
     void press(LightSwitch* sw) override;
 };
-
 class OnState : public State {
 public:
     void press(LightSwitch* sw) override;
