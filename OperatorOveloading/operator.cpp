@@ -122,7 +122,7 @@ class complex{
 //Soch ke dekho — += ka matlab kya hai?
 //cppcomplex a(3, 4);
 //complex b(1, 2);
-//a += b;
+//a += b; 
 //Iska matlab hai:
 //cppa = a + b;  // a khud update hoga!
         complex& operator-=(const complex &c){
@@ -143,7 +143,7 @@ class complex{
 		 real = newreal;
         imag = newimag;
 		return *this;
-		}
+  	}
 		complex& operator = (const complex &c){
 			real=c.real;
 			imag = c.imag;
