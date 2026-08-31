@@ -3,13 +3,13 @@
 #include<vector>
 using namespace std;
 class student{
-	private:
+	private: 
 		int rollno;
 		string name;
 		public:
 			student(int r, string n){
 				rollno = r;
-				name = n;
+			    name = n;
 			}
 			int getrollno(){
 				return rollno;
