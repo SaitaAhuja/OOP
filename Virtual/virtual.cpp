@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
-
 // Base class
 class Animal {
 public:
     string name;
-
     // Constructor
     Animal(string n) {
         name = n;
