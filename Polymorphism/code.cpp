@@ -1,14 +1,11 @@
 #include <iostream>
 #include <string>
-
 using namespace std; 
-
 class MathOperations {
 public:
     int add(int a, int b) {
         return a + b;
     }
-
     string add(string a, string b) {
         return a + b; 
     }
