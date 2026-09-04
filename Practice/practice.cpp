@@ -54,7 +54,7 @@ class student{
     }
 		~student(){
 			delete[] name;
-		}
+		} 
 };
 int main(){
  student* s1= new student("Ali",1,90);
