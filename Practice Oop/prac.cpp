@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 class Person {
 private:
     string name;
@@ -16,7 +15,6 @@ public:
         cout << "Age: " << age << endl;
     }
 };
-
 class Student : public Person {
 private:
     string course;
@@ -29,7 +27,6 @@ public:
         cout << "Course: " << course << endl;
     }
 };
-
 class Teacher : public Person {
 private:
     string subject;
