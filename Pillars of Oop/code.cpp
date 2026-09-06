@@ -32,16 +32,12 @@ public:
 int main() {
     // Object of base class
     Person p1("Ali");
-    
     // Object of derived class
     Student s1("Ahmed", 90);
-
     // Base class pointer (polymorphism)
     Person* ptr;
-
     ptr = &p1;
     ptr->display();
-
     ptr = &s1;
     ptr->display();
 
