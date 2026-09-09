@@ -8,33 +8,27 @@ public:
     Animal(string n) {
         name = n;
     }
-
     // Function (can be overridden)
     virtual void sound() {
         cout << "Animal makes a sound" << endl;
     }
 };
-
 // Derived class
 class Dog : public Animal {
 public:
     Dog(string n) : Animal(n) {}
-
     void sound() {
         cout << name << " says: Woof Woof" << endl;
     }
 };
-
 // Another derived class
 class Cat : public Animal {
 public:
     Cat(string n) : Animal(n) {}
-
     void sound() {
         cout << name << " says: Meow" << endl;
     }
 };
-
 int main() {
     // Object creation
     Animal* a1;
