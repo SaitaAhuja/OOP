@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int n;
+    int n;
 	cout<<"Enter n"<<endl;
 	cin>>n;
 	int *array = new int[n];
 	int *ptr = array;
 	for(int i = 0; i < n ;i ++){
 		cin>>*(ptr+i);
-}
+} 
 	for(int i = 0; i < n ;i ++){
 		cout<<*(ptr+i);
 }
