@@ -11,7 +11,7 @@ int main(){
 	}
 	for(int i = 0; i < n ;i ++){
 		cout<<*(ptr+i);
-	}
+	} 
 	int big = *ptr;
 	for(int i = 0;i<n;i++){
 		if(*(ptr+i)>big){
