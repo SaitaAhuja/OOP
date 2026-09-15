@@ -16,7 +16,7 @@ class student{
 			}
 			string getname(){
 				return name;
-			}
+}
 };
 class teacher{
 	private:
