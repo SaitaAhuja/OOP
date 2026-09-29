@@ -1,12 +1,9 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
-
 class Payment {
 protected:
     double amount;
-
 public:
     Payment(double amt) : amount(amt) {}
 
