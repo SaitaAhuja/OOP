@@ -15,12 +15,12 @@ public:
     }
 };
 // Derived class
-class Student : public Person {
+class Student : public Person{
 private:
     int marks;
 public:
     // Constructor
-    Student(string n, int m) : Person(n) {
+    Student(string n, int m) : Person(n){
         marks = m;
     }
     // Function overriding
