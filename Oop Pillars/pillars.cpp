@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 // 1. Abstraction: Using an Abstract Base Class
 class Shape {
 public:
@@ -8,7 +7,6 @@ public:
     virtual void draw() const = 0; 
     virtual ~Shape() {} // Virtual destructor is a must for inheritance!
 };
-
 // 2. Inheritance: Circle "is-a" Shape
 class Circle : public Shape {
 private:
