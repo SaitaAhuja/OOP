@@ -13,7 +13,7 @@ public:
     virtual void display() {
         cout << "Name: " << name << endl;
     }
-};
+};  
 // Derived class
 class Student : public Person{
 private:
